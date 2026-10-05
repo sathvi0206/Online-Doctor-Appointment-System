@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare - Doctor Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🩺 HealthCare</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointment</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Book Your Doctor Appointment</h2>
+    <p>Choose a doctor and schedule an appointment easily.</p>
+</section>
+
+<section id="doctors">
+    <h2>Our Doctors</h2>
+
+    <div class="doctors">
+
+        <div class="doctor">
+            <div class="icon">👨‍⚕️</div>
+            <h3>Dr. Arun Kumar</h3>
+            <p>Cardiologist</p>
+            <p>Experience: 12 Years</p>
+            <button onclick="selectDoctor('Dr. Arun Kumar')">
+                Book Appointment
+            </button>
+        </div>
+
+        <div class="doctor">
+            <div class="icon">👩‍⚕️</div>
+            <h3>Dr. Priya Sharma</h3>
+            <p>Dermatologist</p>
+            <p>Experience: 8 Years</p>
+            <button onclick="selectDoctor('Dr. Priya Sharma')">
+                Book Appointment
+            </button>
+        </div>
+
+        <div class="doctor">
+            <div class="icon">👨‍⚕️</div>
+            <h3>Dr. Rahul Singh</h3>
+            <p>General Physician</p>
+            <p>Experience: 10 Years</p>
+            <button onclick="selectDoctor('Dr. Rahul Singh')">
+                Book Appointment
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section id="appointment">
+    <h2>Appointment Form</h2>
+
+    <div class="form">
+        <input type="text" id="patient" placeholder="Patient Name">
+
+        <input type="number" id="age" placeholder="Age">
+
+        <select id="doctor">
+            <option value="">Select Doctor</option>
+            <option>Dr. Arun Kumar</option>
+            <option>Dr. Priya Sharma</option>
+            <option>Dr. Rahul Singh</option>
+        </select>
+
+        <input type="date" id="date">
+
+        <input type="time" id="time">
+
+        <button onclick="bookAppointment()">Confirm Appointment</button>
+
+        <div id="confirmation"></div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 HealthCare | Web Technology Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
